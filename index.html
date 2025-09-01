@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agile User Story Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Agile User Story Generator</h1>
+    <div class="container">
+        <label for="persona">As a...</label>
+        <input type="text" id="persona" placeholder="e.g., website user">
+
+        <label for="goal">I want to...</label>
+        <input type="text" id="goal" placeholder="e.g., reset my password">
+
+        <label for="reason">So that...</label>
+        <input type="text" id="reason" placeholder="e.g., I can regain access to my account">
+
+        <button onclick="generateStory()">Generate User Story</button>
+
+        <div id="output">
+            <h2>Generated Output:</h2>
+            <pre id="userStoryOutput"></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
